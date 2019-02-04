@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<body>
+<p id="f_name"></p>
+<p id="f_age"></p>
+<script>
+var name;
+var age;
+function MyFunction(){
+name = window.prompt("Введите сюда свое имя", "Введите имя");
+document.getElementById("f_name").innerHTML = ("Ваше имя " + name + ". Очень рады знакомству с Вами!!!");
+age = window.prompt("Сколько Вам лет, если не секрет?", 35);
+age = +age + 10;
+document.getElementById("f_age").innerHTML = ("<br>Через 10 лет вам исполнится " + age + " лет!");
+}
+do {
+MyFunction();
+} while (confirm("Начать заново?"));
+</script>
+</body>
+</html>
