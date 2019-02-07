@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,9 +7,13 @@
 <body>
 <script>
 	var a = window.prompt("Введите a");
-			
+		while(isNaN(a))
+		{alert('Вводим только цифры');
+		var a = window.prompt("Введите a");}
 	var b = window.prompt("Введите b (a+a)");
-	
+		while(isNaN(b))
+		{alert('Вводим только цифры');
+				var b = window.prompt("Введите b (a+a)");}
 	if (a === b)
 	alert('Значения не равны');
 	else if (Number(a) == a)
@@ -19,5 +22,4 @@
 	alert(a + a === b ? 'Значения равны' : 'Значения не равны');
 </script>
 </body>
-</html>
 </html>
