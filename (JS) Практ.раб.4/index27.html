@@ -1,21 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html><!DOCTYPE html>
 <html>
 <head>
-	<title>задание27</title>
+	<meta charset="utf-8">
+	<title>Индивидуальное задание 4</title>
 </head>
 <body>
-	<script>
-		var a = prompt('Введите значение переменной a:','значение переменной a');
-		while(a.replace (/\d/g, '').length)
-		{alert('Вводим только цифры');
-		var a = prompt('Введите значение переменной a:','значение переменной a');}
-		var b = prompt('Введите значение переменной b:','значение переменной b');
-		while(b.replace (/\d/g, '').length)
-		{alert('Вводим только цифры');
-			var b = prompt('Введите значение переменной b:','значение переменной b');}
-		var result = ((2*a)==b)?'Значения равны ':'значения не равны';
-		alert(result);
-	</script>
-
+<script>
+	var a = window.prompt("Введите a");
+			
+	var b = window.prompt("Введите b (a+a)");
+	
+	if (a === b)
+	alert('Значения не равны');
+	else if (Number(a) == a)
+	alert((+a + +a) === +b ? 'Значения равны' : 'Значения не равны');
+	else
+	alert(a + a === b ? 'Значения равны' : 'Значения не равны');
+</script>
 </body>
+</html>
 </html>
