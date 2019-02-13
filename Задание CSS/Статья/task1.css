@@ -1,0 +1,37 @@
+﻿*{
+	font-family: Arial;
+	margin: 10px;
+}
+
+ul {
+	font-style: italic;
+	color: #009933;
+}
+
+h1, h2, h3{
+	text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	font-stretch: semi-expanded;
+	font-size: 25px;
+	background-color: white;
+	color: #009933;
+}
+
+h2 {
+	/**/
+}
+
+h3{
+	border-top: 2px solid gray;
+	color: #009933;
+	font-style: italic;
+}
+
+p{
+	text-indent: 3em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+	font-size: 11pt;
+}
