@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			function showMessage(from, text)
+				{
+					if (text == undefined)
+					{
+					text = 'текст не передан';
+					}
+					alert(from + ": " + text);
+				}
+			
+			showMessage("Виталий Валентинович", "Привет!"); //Виталий Валентинович: Привет!
+			showMessage("Виталий Валентинович"); //Виталий Валентинович: текст не передан
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Пример 30</title>
+	</head>
+	<body>
+		<script>
+			while(true)
+			{
+				var x = prompt('Введите число X:').replace(/,/g, '.');
+				if (/^-?\d*[.]?\d*$/.test(x))
+					break;
+				else
+					alert('Некорректное значение! Допускаются только числа. Повторите ввод.');	
+			}
+			while(true)
+			{
+				var y = prompt('Введите число Y:').replace(/,/g, '.');
+				if (/^-?\d*[.]?\d*$/.test(y))
+					break;
+				else
+					alert('Некорректное значение! Допускаются только числа. Повторите ввод.');	
+			}
+			var res = Math.pow(x, y);
+			switch(isNaN(res) || res){
+			case true:
+				alert('Нелья возвести данное число в данную степень.');
+				break;
+			case Infinity:
+				if (x == 0)
+					alert('Ноль нельзя возводить в отрицательную спепень!');
+				else
+					alert('Результат - слишком большое (или слишком малое) число для обработки в браузере!\nВоспользуйтесь специализированным ПО для математических расчетов.');
+				break;
+			default:
+				alert('Число ' + x + ' в степени ' + y + ' равно ' + res);
+			}
+		</script>
+	</body>
+</html>

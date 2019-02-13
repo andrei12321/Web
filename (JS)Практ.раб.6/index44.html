@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			function calcD(a, b, c)
+				{
+					return b * b - 4 * a * c;
+				}
+			while(true)
+			{
+				var a = prompt('Введите число A:').replace(/,/g, '.');
+				if (/^-?\d*[.]?\d*$/.test(a))
+					break;
+				else
+					alert('Некорректное значение! Допускаются только числа.');	
+			}
+			while(true)
+			{	
+				var b = prompt('Введите число B:').replace(/,/g, '.');
+				if (/^-?\d*[.]?\d*$/.test(b))
+					break;
+				else
+					alert('Некорректное значение! Допускаются только числа.');	
+			}
+			while(true)
+			{	
+				var c = prompt('Введите число C:').replace(/,/g, '.');
+				if (/^-?\d*[.]?\d*$/.test(c))
+					break;
+				else
+					alert('Некорректное значение! Допускаются только числа.');	
+			}
+			var discriminant = calcD(a, b, c);
+			var msg = 'D=' + discriminant;
+				if (discriminant < 0)
+					msg = msg + '\nВнимание!\nДля отрицательного D не существует вещественных корней, а только комплексные корни.';
+				if (discriminant == Infinity || isNaN(discriminant))
+					msg = "Результат - слишком большое(или слишком малое) число для обработки в браузере!";
+			alert(msg);
+		</script>
+	</body>
+</html>
