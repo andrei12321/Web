@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript">
+
+	
+	var array=['a','b','с','b','a'], i = array.length, result = [];
+
+
+array.sort(function(a,b) {
+
+    return b-a;
+
+});
+
+while(i--){
+
+    if(result.join().search(array[i]+'\\b') == '-1') {
+        result.push(array[i]);
+    }
+}
+alert(result);
+
+	</script>
+	</head>	
+<body>
+	
+</body>
+</html>
